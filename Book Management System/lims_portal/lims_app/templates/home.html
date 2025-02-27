@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% load static %)
+
+{% block main_content %}
+<main role="main">
+<div class = "jumbotron">
+    <div class="container">
+        {% load static %}
+        <img src="{% static 'img.png' %}" class="rounded float-start" alt="Books" height="200" style="margin-right: 20px;">
+        <h1 class="display-4">Hello, readers.</h1>
+        <p>We have a large amount of books prepared for you to read.</p>
+        <p><a role="button" href="#" class="btn btn-success btn-lg">Browse our collection >></a></p>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Why reading is important? </h2>
+        <p>Reading is such significant.</p>
+    </div>
+    <div class="col">
+      <h2>Who are we?</h2>
+        <p>We are the reading leaders.</p>
+    </div>
+    <div class="col">
+      <h2>What does reading bring us?</h2>
+        <p>Happiness.</p>
+    </div>
+  </div>
+    <hr>
+</div>
+</main>
+<footer class="container">
+    <p>produced by Bruce Zong</p>
+</footer>
+{% endblock %}
